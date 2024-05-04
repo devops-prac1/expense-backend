@@ -3,4 +3,7 @@ on: [push]
 jobs:
   call-continuous-integration-reusable:
     uses: devops-prac1/github-reusable-workflows/.github/workflows/ci.yml@main
+    with:
+      project_name: expense-backend
+    secrets: inherit
   #
